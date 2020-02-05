@@ -8,7 +8,7 @@ const journalEntry = {
         {
             date: "January 19, 2020",
             conceptsCovered: "DOM",
-            content: "It was bit difficult to wrap my mind around. I need to practice more with DOM.",
+            content: "It was a bit difficult to wrap my mind around. I need to practice more with DOM.",
             mood: "okay"
         }
     ],
@@ -21,40 +21,40 @@ const journalEntry = {
     displayJournalEntry: function () {
         for (let i = 0; i < this.entries.length; i++) {
             console.log(this.entries[i]);
+            //return (this.entries[i]);
         }
 
     } 
 
 };
 
-const makeJournalEntryComponent = (date, conceptsCovered, content, mood) => {
+const makeJournalEntryComponent = (conceptsCovered, content, journalDate) => {
     return `
         <div class="journalEntry">
             <h1> ${conceptsCovered} </h1>
-            <section>  </section>
-            <aside> ${content} </aside>
+            <section> ${journalEntry.entries[1]} </section>
+            <aside> filler text </aside>
         </div>
     `
 }
 
 const renderJournalEntries = (entries) => {
 
-    const loggedEntriesContainer = document.querySelector("#entryLog");
+    const loggedEntriesContainer = document.querySelector(".entryLog");
 
     for(let i=0; i < entries.length; i++){
         const userInput = entries[i]
-        loggedEntriesContainer.innerHTML += makeJournalEntryComponent(
+         loggedEntriesContainer.innerHTML += makeJournalEntryComponent(
             userInput.journalEntry
         )
     }
 
-   // loggedEntry.innerHTML = makeJournalEntryComponent();
+   
 }
 
 // Invoke the render function
-renderJournalEntries(journalEntry);
+renderJournalEntries(journalEntry.entries);
 
-console.log(journalEntry);
 
 /*const userInput = document.querySelector(".journalDate");
 journalEntry.addJournalEntry(userInput);
@@ -63,4 +63,5 @@ console.log(journalEntry);
 journalEntry.addJournalEntry("I learned about objects.");
 journalEntry.addJournalEntry("I learned about functions and how they are utilized.");
 journalEntry.addJournalEntry("I learned about DOM.");
+
 */
