@@ -1,11 +1,12 @@
 const journalEntry = {
-    /* date: "January 17, 2020",
-     conceptsCovered: "functions",
-     content: "It was a bit of a learning curve for me, but the practice examples in class helped me understand the concepts better.",
-     mood: "sad", 
-  */
-    entries: [
+  
+  entries: [
         {
+            date: "January 17, 2020",
+            conceptsCovered: "functions",
+            content: "It was a bit of a learning curve for me, but the practice examples in class helped me understand the concepts better.",
+            mood: "sad", 
+            
             date: "January 19, 2020",
             conceptsCovered: "DOM",
             content: "It was a bit difficult to wrap my mind around. I need to practice more with DOM.",
@@ -28,12 +29,11 @@ const journalEntry = {
 
 };
 
-const makeJournalEntryComponent = (conceptsCovered, content, journalDate) => {
+const makeJournalEntryComponent = (journalEntry) => {
     return `
-        <div class="journalEntry">
-            <h1> ${conceptsCovered} </h1>
-            <section> ${journalEntry.entries[1]} </section>
-            <aside> filler text </aside>
+        <div class="entryLog">
+            <h1> ${journalEntry.conceptsCovered} </h1>
+            <section> ${journalEntry.content} </section>
         </div>
     `
 }
@@ -44,8 +44,9 @@ const renderJournalEntries = (entries) => {
 
     for(let i=0; i < entries.length; i++){
         const userInput = entries[i]
+        console.log(userInput);
          loggedEntriesContainer.innerHTML += makeJournalEntryComponent(
-            userInput.journalEntry
+            userInput
         )
     }
 
