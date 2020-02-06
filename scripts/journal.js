@@ -8,6 +8,7 @@ const journalEntry = {
     displayJournalEntry: function () {
         for (let i = 0; i < this.entries.length; i++) {
             console.log(this.entries[i]);
+            //return (this.entries[i]);
         }
 
     }
