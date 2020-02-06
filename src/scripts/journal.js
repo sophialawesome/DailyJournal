@@ -39,7 +39,7 @@ const renderJournalEntries = (entries) => {
 
 }
 
-fetch("http://127.0.0.1:3000/entries") 
+fetch("http://127.0.0.1:8088/entries") 
     .then(entries => entries.json()) 
     .then(parsedEntries => {
        
