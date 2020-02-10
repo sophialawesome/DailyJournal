@@ -4,3 +4,5 @@ const journalEntryAPI = {
             .then(response => response.json())
     }
 }
+
+export default journalEntryAPI
