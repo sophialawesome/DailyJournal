@@ -1,15 +1,15 @@
 {
     "entries": [
         {
-            "id": "1",
-            "date": "January 17, 2020",
+            "id": 1,
+            "date": "01/17/2020",
             "conceptsCovered": "Functions",
             "content": "It was a bit of a learning curve for me, but the practice examples in class helped me understand the concepts better.",
             "mood": "sad"
         },
         {
-            "id": "2",
-            "date": "January 19, 2020",
+            "id": 2,
+            "date": "01/19/2020",
             "conceptsCovered": "DOM",
             "content": "It was a bit difficult to wrap my mind around. I need to practice more with DOM.",
             "mood": "okay"

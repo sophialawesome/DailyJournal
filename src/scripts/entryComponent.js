@@ -1,4 +1,5 @@
 const makeJournalEntryComponent = (journalEntry) => {
+ console.log(journalEntry);
     return `
           <div class="entryLog">
               <h1> ${journalEntry.conceptsCovered} </h1>
@@ -7,3 +8,5 @@ const makeJournalEntryComponent = (journalEntry) => {
           </div>
       `
 }
+
+export default makeJournalEntryComponent
