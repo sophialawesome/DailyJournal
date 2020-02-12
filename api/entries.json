@@ -1,18 +1,32 @@
 {
-    "entries": [
-        {
-            "id": 1,
-            "date": "01/17/2020",
-            "conceptsCovered": "Functions",
-            "content": "It was a bit of a learning curve for me, but the practice examples in class helped me understand the concepts better.",
-            "mood": "sad"
-        },
-        {
-            "id": 2,
-            "date": "01/19/2020",
-            "conceptsCovered": "DOM",
-            "content": "It was a bit difficult to wrap my mind around. I need to practice more with DOM.",
-            "mood": "okay"
-        }
-    ]
+  "entries": [
+    {
+      "id": 1,
+      "date": "2020-01-17",
+      "conceptsCovered": "Functions",
+      "content": "It was a bit of a learning curve for me, but the practice examples in class helped me understand the concepts better.",
+      "mood": "sad"
+    },
+    {
+      "id": 2,
+      "date": "2020-01-19",
+      "conceptsCovered": "DOM",
+      "content": "It was a bit difficult to wrap my mind around. I need to practice more with DOM.",
+      "mood": "okay"
+    },
+    {
+      "date": "2020-02-11",
+      "conceptsCovered": "ERD",
+      "content": "in a relationship with entity diagrams <3",
+      "mood": "happy",
+      "id": 3
+    },
+    {
+      "date": "2020-02-12",
+      "conceptsCovered": "Asynchronous Programming ",
+      "content": "It was pretty cool to see code being divided into neatly separate sections, but it was a little confusing a far as understanding its purpose.",
+      "mood": "okay",
+      "id": 4
+    }
+  ]
 }
